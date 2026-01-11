@@ -47,11 +47,11 @@ const fadeInUp = {
 export function BrandDetail({ project }: { project: ProjectData }) {
   const nextProject = getNextProject(project.id)
 
-  const handleNextProject = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" })
-    }, 100)
-  }
+  // const handleNextProject = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  //   setTimeout(() => {
+  //     window.scrollTo({ top: 0, behavior: "smooth" })
+  //   }, 100)
+  // }
 
   return (
     <div id="content" className="bg-white min-h-screen">
@@ -308,7 +308,7 @@ export function BrandDetail({ project }: { project: ProjectData }) {
 
                   <Link
                     href={`/marcas/${nextProject.id}#content`}
-                    onClick={handleNextProject}
+                    // onClick={handleNextProject}
                     className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#1a4d3a] text-white rounded-full text-sm sm:text-base font-medium hover:bg-[#153d2e] transition-all shadow-lg hover:shadow-xl hover:scale-105 w-full sm:w-auto justify-center text-center"
                   >
                     Conhecer Próximo: {nextProject.title}
