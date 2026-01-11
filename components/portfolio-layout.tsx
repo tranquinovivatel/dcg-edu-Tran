@@ -34,7 +34,7 @@ export const PortfolioLayout = () => {
             transition={{ duration: 0.6, delay: index * 0.1 }}
           >
             <Link
-              href={`/marcas/${project.id}`}
+              href={`/marcas/${project.id}#content`}
               className="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow relative"
             >
               <div className="relative overflow-hidden">
