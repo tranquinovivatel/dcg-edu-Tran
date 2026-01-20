@@ -7,7 +7,7 @@ import { PROJECTS } from "@/lib/project-data"
 import { ContactSection } from "./contact-section"
 
 export const PortfolioLayout = () => {
-  const brands = PROJECTS.filter((p) => ["7smiles", "vivatel", "vivatel-labs", "vivatel-academy"].includes(p.id))
+  const brands = PROJECTS.filter((p) => ["7smiles", "vivatel", 'production', "vivatel-labs", "vivatel-academy"].includes(p.id))
 
   return (
     <div className="flex-1 overflow-y-auto p-6 md:p-8 bg-[#fafafa]">

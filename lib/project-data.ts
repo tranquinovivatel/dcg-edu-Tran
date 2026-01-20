@@ -82,6 +82,45 @@ export const PROJECTS = [
     nextProject: "vivatel-labs",
   },
   {
+  id: "production",
+  title: "DCG Production",
+  year: "2024",
+  brandColor: "#1F1F1F", // Preto/Moderno
+  services: ["Gravação", "Mixagem", "Masterização", "Produção", "Sound Design"],
+  linkText: "Conhecer DCG Studio",
+  linkUrl: "https://studio-dcg.vercel.app",
+  overview: {
+    title: "Sobre a Marca",
+    content:
+      "O DCG Studio é um estúdio de produção musical profissional fundado em 2024, criado para oferecer um espaço onde tecnologia de ponta encontra criatividade sem limites. Com equipamentos de estúdio acústico de alta qualidade e uma equipa de engenheiros e produtores experientes, o DCG Studio ajuda artistas a capturar, refinar e lançar música com excelência técnica e sonora.",
+  },
+  direction: {
+    title: "Diferenciais",
+    content:
+      "Oferecemos soluções completas de produção musical — desde gravação e captura em estúdio, passando por mixagem e masterização até ao design sonoro e produção executiva. Nossa abordagem une técnica de ponta com direção criativa personalizada, garantindo que cada projeto atenda aos mais altos padrões da indústria musical.",
+  },
+  outcome: {
+    title: "Resultados e Impacto",
+    content:
+      "O DCG Studio já produziu mais de 50 artistas e gerou mais de 10 milhões de streams nas principais plataformas digitais, elevando a qualidade da música produzida em Angola e ajudando talentos a alcançarem maior visibilidade e profissionalismo no mercado musical.",
+  },
+  heroImage: "/marcas/production.jpg",
+  galleryImages: ["/marcas/studio-back.jpg", "/marcas/studio-front.jpg", "/marcas/studio-top.jpg"],
+  stats: [
+    { label: "Artistas Produzidos", value: "50+" },
+    { label: "Streams Gerados", value: "10M+" },
+    { label: "Sessões Agendadas", value: "—" },
+    { label: "Ano de Fundação", value: "2024" },
+  ],
+  highlights: [
+    "Estúdio profissional com tecnologia de ponta",
+    "Equipe de produtores e engenheiros experientes",
+    "Processo completo de produção musical",
+    "Resultados com alto desempenho nas plataformas digitais",
+  ],
+  nextProject: "vivatel",
+},
+  {
     id: "vivatel-labs",
     title: "Vivatel Labs",
     year: "2025",

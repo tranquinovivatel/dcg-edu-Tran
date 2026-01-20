@@ -9,6 +9,7 @@ import { AboutModal } from "./about-modal"
 const PORTFOLIO_BRANDS = [
   { name: "7Smiles", icon: "7S" },
   { name: "Vivatel", icon: "VTL" },
+  { name: "Production", icon: "STD" },
   { name: "Vivatel Labs", icon: "LABS" },
   { name: "Vivatel Academy", icon: "ACAD" },
 ]

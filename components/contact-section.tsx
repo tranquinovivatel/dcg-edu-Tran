@@ -26,8 +26,8 @@ export function ContactSection() {
             <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
             <div>
               <p className="font-medium text-foreground">Email</p>
-              <a href="mailto:info@dcgedu.ao" className="text-muted-foreground hover:text-primary transition-colors">
-                info@dcgedu.ao
+              <a href="mailto:info@dcgedu.com" className="text-muted-foreground hover:text-primary transition-colors">
+                info@dcgedu.com
               </a>
             </div>
           </div>
@@ -57,12 +57,12 @@ export function ContactSection() {
             <div>
               <p className="font-medium text-foreground">Website</p>
               <a
-                href="https://dcgedu.ao"
+                href="https://dcgedu.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                www.dcgedu.ao
+                www.dcgedu.com
               </a>
             </div>
           </div>
