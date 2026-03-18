@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { Dialog, DialogContent } from "@/components/ui/dialog"
-import { Drawer, DrawerContent } from "@/components/ui/drawer"
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog"
+import { Drawer, DrawerContent, DrawerTitle, DrawerDescription } from "@/components/ui/drawer"
 import { useMediaQuery } from "@/hooks/use-mobile"
 import { X } from "lucide-react"
 
@@ -103,6 +103,10 @@ export const AboutModal = () => {
 
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogContent className="max-w-[90vw] sm:max-w-[620px] p-0 bg-white rounded-[20px] sm:rounded-[24px] border-0 max-h-[90vh] overflow-hidden">
+            <DialogTitle className="sr-only">Sobre Nós</DialogTitle>
+            <DialogDescription className="sr-only">
+              Saiba mais sobre a DCG Edu e nossa missão em Angola.
+            </DialogDescription>
             <AboutContent onClose={() => setOpen(false)} isDesktop={isDesktop} />
           </DialogContent>
         </Dialog>
@@ -124,6 +128,10 @@ export const AboutModal = () => {
 
       <Drawer open={open} onOpenChange={setOpen}>
         <DrawerContent className="bg-white rounded-t-[20px] sm:rounded-t-[24px] border-0 max-h-[90vh]">
+          <DrawerTitle className="sr-only">Sobre Nós</DrawerTitle>
+          <DrawerDescription className="sr-only">
+            Saiba mais sobre a DCG Edu e nossa missão em Angola.
+          </DrawerDescription>
           <AboutContent onClose={() => setOpen(false)} isDesktop={isDesktop} />
         </DrawerContent>
       </Drawer>
