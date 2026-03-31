@@ -1,0 +1,82 @@
+"use client"
+
+import Link from "next/link"
+import { ArrowUpRight } from "lucide-react"
+import { motion } from "framer-motion"
+import { PROJECTS } from "@/lib/project-data"
+import { ContactSection } from "./contact-section"
+
+export const PortfolioLayout = () => {
+  const brands = PROJECTS.filter((p) => ["7smiles", "vivatel", 'production', "vivatel-labs", "vivatel-academy"].includes(p.id))
+
+  return (
+    <div className="flex-1 overflow-y-auto p-6 md:p-8 bg-[#fafafa]">
+      <div className="max-w-[1200px] mx-auto space-y-6">
+        <motion.div
+          className="mb-12 space-y-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">DCG EDU</h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-[800px] leading-relaxed">
+            Representação e gestão estratégica de empresas nas áreas de educação e tecnologia em Angola. Uma holding
+            estratégica responsável pela gestão operacional, expansão e posicionamento de marcas, garantindo crescimento
+            sustentável e excelência nos serviços prestados.
+          </p>
+        </motion.div>
+
+        {brands.map((project, index) => (
+          <motion.div
+            key={project.id}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+          >
+            <Link
+              href={`/marcas/${project.id}#content`}
+              className="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow relative"
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  src={project.heroImage || "/placeholder.svg"}
+                  alt={project.title}
+                  className="w-full aspect-[4/3] object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1a4d3a] via-[#1a4d3a]/40 to-transparent transition-opacity duration-500" />
+
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 flex items-end justify-between transition-opacity duration-500">
+                  <div className="flex items-center gap-2 text-white">
+                    <span className="text-xl md:text-2xl font-medium">{project.title}</span>
+                    <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 transition-transform duration-300 group-hover:-rotate-45" />
+                  </div>
+                  <div className="flex flex-wrap justify-end gap-2 text-white/80 text-sm group-hover:opacity-100 sm:opacity-0">
+                    {project.services.slice(0, 3).map((service) => (
+                      <span key={service} className="px-3 py-1 bg-white/10 rounded-full backdrop-blur-sm">
+                        {service}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </motion.div>
+        ))}
+
+        <div className="max-w-[800px] mx-auto pt-12">
+          <ContactSection />
+
+          <motion.div
+            className="w-full pt-24 pb-12 flex justify-center items-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 0.1 }}
+            transition={{ duration: 1 }}
+          >
+            <div className="text-[80px] md:text-[120px] font-bold text-black tracking-tighter select-none">DCG EDU</div>
+          </motion.div>
+        </div>
+      </div>
+    </div>
+  )
+}
