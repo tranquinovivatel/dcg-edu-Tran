@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out",
+    "predeploy": "npm run build && node -e \"require('fs').writeFileSync('out/.nojekyll','')\"",
+    "deploy": "gh-pages -d out --dotfiles",
     "deploy:gh-pages": "npm run deploy",
     "dev": "next dev",
     "lint": "eslint .",
