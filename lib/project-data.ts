@@ -6,7 +6,7 @@ export const PROJECTS = [
     brandColor: "#DC2626", // Red
     services: ["Educação", "Línguas", "Certificação"],
     linkText: "Conhecer 7Smiles",
-    linkUrl: "https://7smiles.vercel.app",
+    linkUrl: "https://7smiles-oficial.vercel.app/",
     overview: {
       title: "Sobre a Marca",
       content:
