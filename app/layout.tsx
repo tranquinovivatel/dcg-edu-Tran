@@ -11,23 +11,12 @@ const _facultyGlyphic = Faculty_Glyphic({ subsets: ["latin"], weight: ["400"] })
 export const metadata: Metadata = {
   metadataBase: new URL("https://dcgedu.com"),
   title: {
-    default: "DCG EDU - Liderança em Educação e Tecnologia em Angola",
+    default: "DCG EDU - Liderança em Educação e Tecnologia",
     template: "%s | DCG EDU",
   },
   description:
-    "DCG EDU é uma holding estratégica líder em Angola, focada na gestão, representação e expansão de marcas inovadoras nos setores de educação e tecnologia.",
-  keywords: [
-    "DCG EDU",
-    "Educação Angola",
-    "Tecnologia Angola",
-    "Holding Angola",
-    "Gestão Estratégica",
-    "Vivatel",
-    "7Smiles",
-    "Inovação Educacional",
-    "Transformação Digital",
-    "Angola Business",
-  ],
+    "Holding estratégica em Angola, especializada na gestão operacional e expansão de marcas líderes em educação e tecnologia. Impulsionando a inovação e o crescimento sustentável.",
+  keywords: ["Educação", "Tecnologia", "Angola", "Gestão Estratégica", "DCG EDU", "Inovação", "Liderança", "Holding", "Transformação Digital"],
   authors: [{ name: "DCG EDU" }],
   creator: "DCG EDU",
   publisher: "DCG EDU",
@@ -36,29 +25,59 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    type: "website",
-    locale: "pt_AO",
+    title: "DCG EDU - Liderança em Educação e Tecnologia",
+    description: "Holding estratégica em Angola focada na gestão e expansão de marcas líderes nos sectores de educação e tecnologia.",
     url: "https://dcgedu.com",
-    title: "DCG EDU - Liderança em Educação e Tecnologia em Angola",
-    description:
-      "Holding estratégica responsável pela gestão e expansão de marcas líderes em educação e tecnologia no mercado angolano.",
     siteName: "DCG EDU",
+    locale: "pt_PT",
+    type: "website",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "DCG EDU - Liderança em Educação e Tecnologia",
+        alt: "DCG EDU - Strategic Leadership",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DCG EDU - Liderança em Educação e Tecnologia em Angola",
-    description:
-      "Holding estratégica responsável pela gestão e expansão de marcas líderes em educação e tecnologia no mercado angolano.",
+    title: "DCG EDU - Liderança em Educação e Tecnologia",
+    description: "Holding estratégica em Angola focada na gestão e expansão de marcas líderes nos sectores de educação e tecnologia.",
     images: ["/og-image.png"],
+  },
+  icons: {
+    icon: [
+      {
+        url: "/icon.svg",
+        type: "image/svg+xml",
+      },
+      {
+        url: "/icon-light-32x32.png",
+        sizes: "32x32",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/icon-dark-32x32.png",
+        sizes: "32x32",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+    apple: [
+      {
+        url: "/icon.svg",
+        type: "image/svg+xml",
+      },
+      {
+        url: "/apple-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -71,24 +90,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
-  manifest: "/site.webmanifest",
+  themeColor: "#1a4d3a",
 }
 
 export default function RootLayout({
@@ -108,15 +110,13 @@ export default function RootLayout({
               "name": "DCG EDU",
               "url": "https://dcgedu.com",
               "logo": "https://dcgedu.com/logo-lettering.png",
-              "description":
-                "Holding estratégica líder em Angola, focada na gestão e expansão de marcas nos setores de educação e tecnologia.",
+              "image": "https://dcgedu.com/og-image.png",
+              "description": "Holding estratégica em Angola, especializada na gestão operacional e expansão de marcas líderes em educação e tecnologia.",
               "address": {
                 "@type": "PostalAddress",
-                "addressCountry": "AO",
-              },
-              "sameAs": [
-                // Adicionar links de redes sociais se existirem
-              ],
+                "addressLocality": "Luanda",
+                "addressCountry": "AO"
+              }
             }),
           }}
         />
