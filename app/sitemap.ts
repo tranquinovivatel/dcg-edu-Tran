@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next'
 import { PROJECTS } from '@/lib/project-data'
  
+export const dynamic = 'force-static'
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const brands = PROJECTS.map((project) => ({
     url: `https://dcgedu.com/marcas/${project.id}`,
