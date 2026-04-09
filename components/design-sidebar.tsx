@@ -55,10 +55,14 @@ export const DesignSidebar = () => {
     <nav className="flex flex-col justify-between w-full h-full bg-[#f5f5f5] p-9 pr-12 overflow-hidden font-sans select-none">
       {/* Top Content */}
       <div className="flex flex-col gap-6 w-full">
-        <div className="w-auto h-10 flex items-center justify-start cursor-pointer hover:scale-105 transition-transform">
-          <a href="/#topo">
-            <div id="#topo" className="text-3xl font-bold tracking-tight text-[#0f0f12]">DCG EDU</div>
-          </a>
+        <div className="w-auto h-12 flex items-center justify-start cursor-pointer hover:scale-105 transition-transform">
+          <Link href="/#topo">
+            <img
+              src="/logo-lettering.png"
+              alt="DCG EDU Logo"
+              className="h-full w-auto object-contain brightness-0 filter" // filter to make it match the text color if needed, or just use as is
+            />
+          </Link>
         </div>
 
         <div className="flex flex-col gap-6">
