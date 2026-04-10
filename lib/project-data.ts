@@ -118,7 +118,46 @@ export const PROJECTS = [
       "Processo completo de produção musical",
       "Resultados com alto desempenho nas plataformas digitais",
     ],
-    nextProject: "vivatel",
+    nextProject: "prestigios",
+  },
+  {
+    id: "prestigios",
+    title: "Prestígios Eventos",
+    year: "2025",
+    brandColor: "#D4AF37", // Gold
+    services: ["Decoração", "Planeamento", "Catering", "Eventos Corporate"],
+    linkText: "Conhecer Prestígios",
+    linkUrl: "https://prestigio-oficial.vercel.app/",
+    overview: {
+      title: "Sobre a Marca",
+      content:
+        "A Prestígios Eventos é uma agência boutique especializada na criação de experiências memoráveis e eventos de alto padrão em Angola. Com um foco obsessivo no detalhe e na sofisticação, transformamos visões em realidades extraordinárias, desde celebrações privadas exclusivas a grandes eventos corporativos.",
+    },
+    direction: {
+      title: "Diferenciais",
+      content:
+        "Acreditamos que cada detalhe conta uma história. Nossa equipa de especialistas em design de eventos, logística e produção trabalha incansavelmente para garantir que cada elemento — da iluminação à escolha do mobiliário — esteja em perfeita harmonia. Oferecemos soluções chave-na-mão que garantem tranquilidade e exclusividade aos nossos clientes.",
+    },
+    outcome: {
+      title: "Resultados e Excelência",
+      content:
+        "Reconhecida pela nossa assinatura de luxo e profissionalismo, a Prestígios Eventos consolidou-se como a escolha preferencial para quem busca sofisticação sem compromissos. Com um portfólio de eventos de sucesso, continuamos a elevar os padrões da indústria de eventos em Angola, criando momentos que perduram no tempo.",
+    },
+    heroImage: "/marcas/prestigios-hero.png",
+    galleryImages: ["/marcas/prestigios-1.png", "/marcas/prestigios-2.png", "/marcas/prestigios-3.png"],
+    stats: [
+      { label: "Eventos Realizados", value: "200+" },
+      { label: "Clientes Satisfeitos", value: "98%" },
+      { label: "Prêmios de Design", value: "5" },
+      { label: "Anos de Mercado", value: "7" },
+    ],
+    highlights: [
+      "Decoração Premium e Exclusiva",
+      "Planeamento Estratégico de Eventos",
+      "Serviço Personalizado VIP",
+      "Logística e Coordenação Integral",
+    ],
+    nextProject: "vivatel-labs",
   },
   {
     id: "vivatel-labs",
