@@ -24,7 +24,7 @@ const TESTIMONIALS = [
   {
     quote:
       "Parceria excecional que trouxe inovação e excelência operacional. A DCG Edu compreende profundamente o mercado angolano de educação e tecnologia.",
-    author: "João Santos",
+    author: "Domingues Gonga",
     role: "Fundador",
   },
   {
@@ -141,9 +141,8 @@ export const DesignSidebar = () => {
               <button
                 key={i}
                 onClick={() => setTestimonialIndex(i)}
-                className={`w-1.5 h-1.5 rounded-full transition-all ${
-                  i === testimonialIndex ? "bg-black w-3" : "bg-neutral-300"
-                }`}
+                className={`w-1.5 h-1.5 rounded-full transition-all ${i === testimonialIndex ? "bg-black w-3" : "bg-neutral-300"
+                  }`}
               />
             ))}
           </div>
