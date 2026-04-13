@@ -45,7 +45,7 @@ export const PROJECTS = [
     brandColor: "#3B82F6", // Light Blue
     services: ["Internet", "Cloud", "Segurança", "IA"],
     linkText: "Conhecer Vivatel",
-    linkUrl: "https://vivateloficial.vercel.app",
+    linkUrl: "https://vivatel.ao/",
     overview: {
       title: "Sobre a Marca",
       content:
@@ -166,7 +166,7 @@ export const PROJECTS = [
     brandColor: "#8B5CF6", // Purple
     services: ["IA", "Robótica", "IoT", "STEM"],
     linkText: "Conhecer Vivatel Labs",
-    linkUrl: "https://vivateloficial.vercel.app/",
+    linkUrl: "https://vivatel.ao//",
     overview: {
       title: "Sobre o Centro de Inovação",
       content:
@@ -205,7 +205,7 @@ export const PROJECTS = [
     brandColor: "#F59E0B", // Amber/Orange
     services: ["Formação", "Tecnologia", "Certificação", "Upskilling"],
     linkText: "Conhecer Vivatel Academy",
-    linkUrl: "https://vivateloficial.vercel.app/",
+    linkUrl: "https://vivatel.ao//",
     overview: {
       title: "Sobre a Academia",
       content:
